@@ -1,0 +1,38 @@
+To automatically download Webnucleo dependencies and compile.
+
+	$ make
+
+Alternatively, you may download Libnucnet and WnMatrix manually
+and place them in the 'vendor' directory with the names
+'wn_matrix.tar.gz' and 'libnucnet.tar.gz'.
+
+
+
+
+To run the partition function data to XML converter:
+
+	$ ./build/bin/partition2xml partition_file output_file
+
+where partition_file is the filename of a winvn file without the
+nuclide list or header at the top. The output_file is written in
+the Webnucleo/Libnucnet XML format.  For example, type
+
+        $ ./build/bin/partition2xml test_data/PartitionV1.0 nuc.xml
+
+nuc.xml is the output.
+
+
+
+
+To run the reaclib to XML converter:
+
+	$ ./build/bin/reaclib2xml test_data/nuclides.xml reaclib_file output_file
+
+where reaclib_file is a file in Reaclib1 format and nuclides.xml
+is an XML file containing all the nuclides used in the Reaclib
+file. The output_file is written in the Webnucleo/Libnucnet XML
+format.  For example, type
+
+        $ ./build/bin/reaclib2xml test_data/nuclides.xml test_data/full_reaclib reac.xml
+
+reac.xml is the output.
