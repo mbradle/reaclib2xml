@@ -17,7 +17,7 @@ where partition_file is the filename of a winvn file without the
 nuclide list or header at the top. The output_file is written in
 the Webnucleo/Libnucnet XML format.  For example, type
 
-        $ ./build/bin/partition2xml test_data/PartitionV1.0 nuc.xml
+        $ ./build/bin/partition2xml test_data/partition_v1.0 nuc.xml
 
 nuc.xml is the output.
 
