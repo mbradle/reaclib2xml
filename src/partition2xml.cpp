@@ -98,6 +98,8 @@ int main(int argc, char **argv) {
 	Libnucnet__Nuc__writeToXmlFile(lnnNuc, outputFile);
 	
 	// Free pointers
+        gsl_vector_free( t9Vec );
+        gsl_vector_free( pfVec );
 	Libnucnet__Nuc__free(lnnNuc);
 	
 	return 0;
